@@ -261,6 +261,6 @@ form button:active {
     width: 100%;
   }
   .form-wrapper {
-    width: 95%;
+    width: 95vw;
   }
 }
