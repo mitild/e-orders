@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="x-icon" href="images/eorder-icon-01.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+
+  <title>e-orders - quick order app</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Watta Burger</h1>
+      <h3>Let's get dirty</h3>
+    </header>
+    <section id="wrapper">
+      <div id="menu-container">
+          <!-- JS generated -->
+      </div>
+      <div id="order-container" class="hidden order-container">
+        <div>
+          <h2 id="your-order-header">Your order</h2>
+            <div class="product-info" id="order-items">
+              <!-- JS generated -->
+            </div>
+            <div id="total-price-wrapper">
+              <h2>Total price:</h2>
+              <p id="total-price" class="price"></p>
+            </div>
+            <button id="complete-order-btn">Complete order</button>
+        </div>
+      </div>
+      <div id="checkout-form" class="hidden">
+        <div class="form-wrapper">
+          <div>
+            <h2 id="form-title">Enter card details</h2>
+            <form>
+              <input
+                type="text" 
+                id="name-input"
+                name="name-input"
+                aria-label="name-input" 
+                placeholder="Enter your name" 
+                required>
+              <input
+                type="number" 
+                id="card-number" 
+                name="card-number"
+                aria-label="card-number"
+                placeholder="Enter card number"
+                maxlength= "16"
+                oninput="javascript: 
+                if(this.value.length > this.maxLength)
+                this.value = this.value.slice(0, this.maxLength);"
+                required>
+              <input
+                type="password" 
+                id="cvv-input" 
+                name="CVV"
+                aria-label="CVV"
+                placeholder="Enter CVV" 
+                maxlength= "3"
+                required>
+              <button type="button" class="pay-btn" id="pay-btn">
+                Pay
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="thanks-msg-container">
+        <p id="thanks-text" class="hidden thanks-container"></p>
+      </div>
+    </section>  
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
