@@ -157,8 +157,7 @@ header {
   font-size: 12px; 
 }
 
-.remove-btn:hover,
-.remove-btn:active {
+.remove-btn:hover {
   color: #3C3C3C;
 }
 
