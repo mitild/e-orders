@@ -263,4 +263,7 @@ form button:active {
   .form-wrapper {
     width: 95vw;
   }
+  #wrapper {
+    padding: 0 10px 45px;
+  }
 }
