@@ -243,6 +243,23 @@ form button:active {
   color: whitesmoke;
 }
 
+.close-btn {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 8%;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: 1px solid #757575;
+  border-radius: 50%;
+  color: #3C3C3C;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+
 /* THANKS MESSAGE */
 
 .thanks-container {

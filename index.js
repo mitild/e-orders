@@ -9,6 +9,7 @@ const completeOrderBtn = document.getElementById('complete-order-btn')
 const checkoutForm = document.getElementById('checkout-form')
 const payBtn = document.getElementById('pay-btn')
 const thanksText = document.getElementById('thanks-text')
+const closeBtn = document.getElementById('close-btn')
 let orderArray = []
 
 // Event Listeners
@@ -36,6 +37,10 @@ payBtn.addEventListener('click', function(){
   document.querySelector('input[type="text"]').value = ''
   document.querySelector('input[type="number"]').value = ''
   document.querySelector('input[type="password"]').value = ''
+})
+
+closeBtn.addEventListener('click', function(){
+  checkoutForm.classList.add('hidden')
 })
 
 // Functions
