@@ -282,4 +282,8 @@ form button:active {
   #wrapper {
     padding: 0 15px 45px 15px;
   }
+
+  .close-btn {
+    right: 3%;
+  }
 }
